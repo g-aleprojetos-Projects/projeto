@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Brasil.styles Container DEVE ser igual ao snapshot QUANDO "idiomaSelecionado" for igual a false 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3.438rem;
+  height: 100%;
+  margin: 0.063rem 0.188rem;
+  cursor: pointer;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Brasil.styles Container DEVE ser igual ao snapshot QUANDO "idiomaSelecionado" for igual a true 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3.438rem;
+  height: 100%;
+  margin: 0.063rem 0.188rem;
+  cursor: default;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Brasil.styles PathAmarelo DEVE ser igual ao snapshot QUANDO "idiomaSelecionado" for igual a false 1`] = `
+.c0 {
+  fill: #C8C8C8;
+}
+
+<path
+  className="c0"
+/>
+`;
+
+exports[`Brasil.styles PathAmarelo DEVE ser igual ao snapshot QUANDO "idiomaSelecionado" for igual a true 1`] = `
+.c0 {
+  fill: #FFE15A;
+}
+
+<path
+  className="c0"
+/>
+`;
+
+exports[`Brasil.styles PathAzul DEVE ser igual ao snapshot QUANDO "idiomaSelecionado" for igual a false 1`] = `
+.c0 {
+  fill: #3C3C3C;
+}
+
+<path
+  className="c0"
+/>
+`;
+
+exports[`Brasil.styles PathAzul DEVE ser igual ao snapshot QUANDO "idiomaSelecionado" for igual a true 1`] = `
+.c0 {
+  fill: #41479B;
+}
+
+<path
+  className="c0"
+/>
+`;
+
+exports[`Brasil.styles PathBranco DEVE ser igual ao snapshot 1`] = `
+<path
+  className=""
+  fill="#ffffff"
+/>
+`;
+
+exports[`Brasil.styles PathVerde DEVE ser igual ao snapshot QUANDO "idiomaSelecionado" for igual a false 1`] = `
+.c0 {
+  fill: #9B9C9A;
+}
+
+<path
+  className="c0"
+/>
+`;
+
+exports[`Brasil.styles PathVerde DEVE ser igual ao snapshot QUANDO "idiomaSelecionado" for igual a true 1`] = `
+.c0 {
+  fill: #73AF00;
+}
+
+<path
+  className="c0"
+/>
+`;

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.styles Container DEVE ser igual ao snapshot 1`] = `
+.c0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #121214;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`App.styles Image DEVE ser igual ao snapshot 1`] = `
+.c0 {
+  width: 40em;
+  height: 40em;
+}
+
+<img
+  className="c0"
+/>
+`;

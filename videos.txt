@@ -1,0 +1,16 @@
+o setup do projeto vai ter:
+
+video 1
+eslint: que já vem com o projeto
+prettir: para ajudar na organização do projeto
+
+video 2
+style-components: para trabalhar com a estilização
+cross-env - https://www.npmjs.com/package/cross-env
+testvite: para os testes
+jest: para fazer os teste da parte do estilo
+
+video 3
+husky - https://typicode.github.io/husky/getting-started.html
+commitlint - https://github.com/conventional-changelog/commitlint
+cz-cli - https://github.com/commitizen/cz-cli

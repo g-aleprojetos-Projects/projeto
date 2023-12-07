@@ -1,0 +1,238 @@
+/** criação projeto **/
+npm create vite@latest
+
+/** inicializar git **/
+git init
+
+/** instalar os pacotes node **/
+npm install
+
+/** roda o projeto **/
+npm run dev
+
+
+/** site realm **/
+https://realm.io/?utm_source=google&utm_campaign=search_gs_pl_evergreen_realm_product_prosp-brand_gic-null_ww-multi_ps-all_desktop_eng_lead&utm_term=realm&utm_medium=cpc_paid_search&utm_ad=p&utm_ad_campaign_id=11303420057&adgroup=132586004050&cq_cmp=11303420057&gad=1&gclid=CjwKCAjw3dCnBhBCEiwAVvLcu-iN88I2OlLx011grkYJKDy14QAYNEaJvGzKukqyEWJrVIsDmWc4GBoCMWcQAvD_BwE
+
+https://www.mongodb.com/docs/realm/sdk/react-native/
+
+https://www.mongodb.com/docs/realm/sdk/react-native/install/
+
+/** instalação realm no react native **/
+npm install realm
+
+npm i @realm/react
+
+/** cria a pastas **/
+
+schema/response
+
+/** cria arquivo **/
+contador.ts
+
+/** conteudo **/
+export interface ContadorResponse {
+  id: string;
+  numero: number;
+}
+
+/** cria index **/
+index.ts
+
+/** valor index **/
+export * from "./contador";
+
+
+/** cria pasta src/data/schema **/
+
+data
+schema
+
+/** cria arquivo ContadorSchema **/
+ContadorSchema.ts
+
+/** com o valor **/
+
+export class ContadorSchema extends Realm.Object<ContadorResponse> {
+  static schema = {
+    name: "Contador",
+    propeties: {
+      id: "string",
+      contador: "int",
+    },
+    primaryKey: "id",
+  };
+}
+
+
+/** Cria a pasta context/Data **/
+context/Data
+
+/** cria o contexto do Realm **/
+
+RealmContext.tsx
+
+/** conteudo do contexto **/
+const realmConfig = {
+    path: 'Poc-realm',
+    deleteRealmIfMigrationNeeded: true,
+    schema: [
+        ContadorSchema
+    ]
+}
+
+export const { RealmProvider, useRealm, useObject, useQuery } = createRealmContext(realmConfig)
+
+/** aplicar o contexto nesse caso no arquivo main en torno do App **/
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <RealmProvider>
+      <App />
+      </RealmProvider>
+  </React.StrictMode>,
+)
+
+obs: tomar cuidado para mepafo o RealmProvider do contexto e não do realm
+
+
+
+/** agora fazer um repository para usar o realm **/
+/** criar pasta src/data/repositories/contadorRepository **/
+/** criar arquivo contadorRepository.ts com conteudo **/
+
+
+export const ContadorRepository = () => {
+  const counterMap = "Contador";
+  const realm = useRealm();
+
+  const add = (contador: ContadorResponse): void => {
+    realm.write(() => {
+      realm.create(counterMap, contador, UpdateMode.Modified);
+    });
+  };
+
+  const deleleAll = () => {
+    realm.write(() => {
+      realm.delete(realm.objects(counterMap));
+    });
+  };
+
+  const list = useCallback(() => {
+    return realm.objects<ContadorResponse>(counterMap);
+  }, [realm]);
+
+  const getById = useCallback(
+    (contadorId: string) => {
+      return realm.objectForPrimaryKey<ContadorResponse>(
+        counterMap,
+        contadorId
+      );
+    },
+    [realm]
+  );
+
+  return {
+    add,
+    deleleAll,
+    list,
+    getById,
+  };
+};
+
+
+
+
+/** criar pasta src/hooks/apirealm/useContador **/
+/** cria arquivo useContador com conteudo **/
+
+
+export interface Erro {
+    codigo: string
+    mensagem: string
+}
+
+export type contadorParams = {
+    counterUpdate?: ContadorResponse,
+    estadoInicialCarregando?: boolean
+}
+
+export function useContador({ counterUpdate, estadoInicialCarregando }: contadorParams) {
+    const { add, list } = ContadorRepository()
+    const [erro, setErro] = useState<Erro>()
+    const [carregando, setCarregando] = useState<boolean>(estadoInicialCarregando ?? false)
+    const [contador, setContador] = useState<ContadorResponse>()
+
+    const obter = useCallback(() => {
+        setCarregando(true)
+        setErro(undefined)
+
+        try {
+            const result = list()
+            if (result) {
+                setContador(result[0])
+            } else {
+                setErro({
+                    codigo: 'contador inexistente',
+                    mensagem: 'Não foi possivel encontrar o contador'
+                })
+            }
+        } catch (error) {
+            setErro({
+                codigo: 'erroGenerico',
+                mensagem: 'Erro ao obter o contador'
+            })
+            setContador(undefined)
+        } finally {
+            setCarregando(false)
+        }
+    }, [list])
+
+    const salvar = useCallback(() => {
+        setCarregando(true)
+        setErro(undefined)
+
+        try {
+            if (counterUpdate) {
+                add(counterUpdate)
+            }
+
+        } catch (error) {
+            setErro({
+                codigo: 'erroGenerico',
+                mensagem: 'Erro ao salvar o contador'
+            })
+            setContador(undefined)
+        } finally {
+            setCarregando(false)
+        }
+    }, [add, counterUpdate])
+
+    return {
+        salvar,
+        contador,
+        obter,
+        carregando,
+        erro
+    }
+}
+
+/** Agora é só aplicar na pagina App() **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

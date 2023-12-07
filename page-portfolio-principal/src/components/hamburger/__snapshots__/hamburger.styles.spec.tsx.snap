@@ -1,0 +1,254 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hamburger.styles Container DEVE ser igual ao snapshot 1`] = `
+.c0 {
+  display: none;
+  position: fixed;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  width: 2.125rem;
+  height: 2.125rem;
+  right: 0;
+  margin-right: 2.125rem;
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 20;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+<button
+  className="c0"
+/>
+`;
+
+exports[`Hamburger.styles SpanInferior DEVE ser igual ao snapshot 1`] = `
+.c0 {
+  width: 2.125rem;
+  height: 0.188rem;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  -webkit-transform-origin: 0.063rem;
+  -ms-transform-origin: 0.063rem;
+  transform-origin: 0.063rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c1 {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+<span
+  className="c0 c1"
+/>
+`;
+
+exports[`Hamburger.styles SpanInferior DEVE ser igual ao snapshot QUANDO "open" for "true" e "backgroumdDark" for "false" 1`] = `
+.c0 {
+  width: 2.125rem;
+  height: 0.188rem;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  -webkit-transform-origin: 0.063rem;
+  -ms-transform-origin: 0.063rem;
+  transform-origin: 0.063rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c1 {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+<span
+  className="c0 c1"
+  open={true}
+/>
+`;
+
+exports[`Hamburger.styles SpanInferior DEVE ser igual ao snapshot QUANDO "open" for "true" e "backgroumdDark" for "true" 1`] = `
+.c0 {
+  width: 2.125rem;
+  height: 0.188rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  -webkit-transform-origin: 0.063rem;
+  -ms-transform-origin: 0.063rem;
+  transform-origin: 0.063rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c1 {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+<span
+  className="c0 c1"
+  open={true}
+/>
+`;
+
+exports[`Hamburger.styles SpanMeio DEVE ser igual ao snapshot 1`] = `
+.c0 {
+  width: 2.125rem;
+  height: 0.188rem;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  -webkit-transform-origin: 0.063rem;
+  -ms-transform-origin: 0.063rem;
+  transform-origin: 0.063rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c1 {
+  opacity: 1;
+}
+
+<span
+  className="c0 c1"
+/>
+`;
+
+exports[`Hamburger.styles SpanMeio DEVE ser igual ao snapshot QUANDO "open" for "true" e "backgroumdDark" for false 1`] = `
+.c0 {
+  width: 2.125rem;
+  height: 0.188rem;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  -webkit-transform-origin: 0.063rem;
+  -ms-transform-origin: 0.063rem;
+  transform-origin: 0.063rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c1 {
+  opacity: 0;
+}
+
+<span
+  className="c0 c1"
+  open={true}
+/>
+`;
+
+exports[`Hamburger.styles SpanMeio DEVE ser igual ao snapshot QUANDO "open" for "true" e "backgroumdDark" for true 1`] = `
+.c0 {
+  width: 2.125rem;
+  height: 0.188rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  -webkit-transform-origin: 0.063rem;
+  -ms-transform-origin: 0.063rem;
+  transform-origin: 0.063rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c1 {
+  opacity: 0;
+}
+
+<span
+  className="c0 c1"
+  open={true}
+/>
+`;
+
+exports[`Hamburger.styles SpanSuperior DEVE ser igual ao snapshot 1`] = `
+.c0 {
+  width: 2.125rem;
+  height: 0.188rem;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  -webkit-transform-origin: 0.063rem;
+  -ms-transform-origin: 0.063rem;
+  transform-origin: 0.063rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c1 {
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+<span
+  className="c0 c1"
+/>
+`;
+
+exports[`Hamburger.styles SpanSuperior DEVE ser igual ao snapshot QUANDO "open" for "true" e "backgroumdDark" for false 1`] = `
+.c0 {
+  width: 2.125rem;
+  height: 0.188rem;
+  background-color: #000000;
+  border-radius: 0.5rem;
+  -webkit-transform-origin: 0.063rem;
+  -ms-transform-origin: 0.063rem;
+  transform-origin: 0.063rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c1 {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+<span
+  className="c0 c1"
+  open={true}
+/>
+`;
+
+exports[`Hamburger.styles SpanSuperior DEVE ser igual ao snapshot QUANDO "open" for "true" e "backgroumdDark" for true 1`] = `
+.c0 {
+  width: 2.125rem;
+  height: 0.188rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  -webkit-transform-origin: 0.063rem;
+  -ms-transform-origin: 0.063rem;
+  transform-origin: 0.063rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c1 {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+<span
+  className="c0 c1"
+  open={true}
+/>
+`;

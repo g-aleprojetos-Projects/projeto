@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleSwitch.styles Input DEVE ser igual ao snapshot 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.c0:checked + Span {
+  left: 50%;
+  background: url(sun.svg);
+  background-size: cover;
+}
+
+<input
+  className="c0"
+/>
+`;
+
+exports[`ToggleSwitch.styles Span DEVE ser igual ao snapshot 1`] = `
+.c0 {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  left: 0;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  background: url(moon.svg);
+  background-size: cover;
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`ToggleSwitch.styles SpanBack DEVE ser igual ao snapshot quando isOn for "false" 1`] = `
+.c0 {
+  position: absolute;
+  width: 1.313rem;
+  height: 1.313rem;
+  right: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  background: url(stars.svg);
+  background-size: 100%;
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`ToggleSwitch.styles SpanBack DEVE ser igual ao snapshot quando isOn for "true" 1`] = `
+.c0 {
+  position: absolute;
+  width: 1.313rem;
+  height: 1.313rem;
+  right: 2.125rem;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  background: url(clouds.svg);
+  background-size: 100%;
+}
+
+<span
+  className="c0"
+/>
+`;
+
+exports[`ToggleSwitch.styles ToggleSwitchWrapper DEVE ser igual ao snapshot quando isOn for "false" 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 4rem;
+  height: 1.9rem;
+  border-radius: 2rem;
+  background: url(backgroundMoon.svg);
+  background-size: cover;
+}
+
+<label
+  className="c0"
+/>
+`;
+
+exports[`ToggleSwitch.styles ToggleSwitchWrapper DEVE ser igual ao snapshot quando isOn for "true" 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 4rem;
+  height: 1.9rem;
+  border-radius: 2rem;
+  background: url(backgroundSun.svg);
+  background-size: cover;
+}
+
+<label
+  className="c0"
+/>
+`;

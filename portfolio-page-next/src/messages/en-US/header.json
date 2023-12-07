@@ -1,0 +1,16 @@
+{
+"Header":{
+    "language": "Languages",
+    "Languages":{
+      "english": "English",
+      "french": "French",
+      "portuguese": "Portuguese"
+    }   
+  },
+  "Navbar": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "about": "About Us"
+  }
+}

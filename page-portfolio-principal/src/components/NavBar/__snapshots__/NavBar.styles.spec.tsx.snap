@@ -1,0 +1,397 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RightNav.styles ContainerContent DEVE ser igual ao snapshot QUANDO "openRightNav" for false e "backgroundDark" for false. 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  position: static;
+  background-color: 'transparent';
+  -webkit-transform: 'none';
+  -ms-transform: 'none';
+  transform: 'none';
+  top: 'auto';
+  right: 'auto';
+  width: 'auto';
+  height: auto;
+  padding-top: 'auto';
+  -webkit-transition: 'none';
+  transition: 'none';
+}
+
+@media screen and (max-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    position: fixed;
+    background-color: #000000;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    top: 0;
+    right: 0;
+    width: 100vw;
+    padding-top: 3.5rem;
+    -webkit-transition: 'transform 0.3s ease-in-out';
+    -webkit-transition: 'transform 0.3s ease-in-out';
+    transition: 'transform 0.3s ease-in-out';
+  }
+}
+
+<ul
+  className="c0"
+/>
+`;
+
+exports[`RightNav.styles ContainerContent DEVE ser igual ao snapshot QUANDO "openRightNav" for false e "backgroundDark" for true. 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  position: static;
+  background-color: 'transparent';
+  -webkit-transform: 'none';
+  -ms-transform: 'none';
+  transform: 'none';
+  top: 'auto';
+  right: 'auto';
+  width: 'auto';
+  height: auto;
+  padding-top: 'auto';
+  -webkit-transition: 'none';
+  transition: 'none';
+}
+
+@media screen and (max-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    position: fixed;
+    background-color: #000000;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    top: 0;
+    right: 0;
+    width: 100vw;
+    padding-top: 3.5rem;
+    -webkit-transition: 'transform 0.3s ease-in-out';
+    -webkit-transition: 'transform 0.3s ease-in-out';
+    transition: 'transform 0.3s ease-in-out';
+  }
+}
+
+<ul
+  className="c0"
+/>
+`;
+
+exports[`RightNav.styles ContainerContent DEVE ser igual ao snapshot QUANDO "openRightNav" for true e "backgroundDark" for false. 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  position: static;
+  background-color: 'transparent';
+  -webkit-transform: 'none';
+  -ms-transform: 'none';
+  transform: 'none';
+  top: 'auto';
+  right: 'auto';
+  width: 'auto';
+  height: auto;
+  padding-top: 'auto';
+  -webkit-transition: 'none';
+  transition: 'none';
+}
+
+@media screen and (max-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    position: fixed;
+    background-color: #000000;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    top: 0;
+    right: 0;
+    width: 100vw;
+    padding-top: 3.5rem;
+    -webkit-transition: 'transform 0.3s ease-in-out';
+    -webkit-transition: 'transform 0.3s ease-in-out';
+    transition: 'transform 0.3s ease-in-out';
+  }
+}
+
+<ul
+  className="c0"
+/>
+`;
+
+exports[`RightNav.styles ContainerContent DEVE ser igual ao snapshot QUANDO "openRightNav" for true e "backgroundDark" for true. 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  position: static;
+  background-color: 'transparent';
+  -webkit-transform: 'none';
+  -ms-transform: 'none';
+  transform: 'none';
+  top: 'auto';
+  right: 'auto';
+  width: 'auto';
+  height: auto;
+  padding-top: 'auto';
+  -webkit-transition: 'none';
+  transition: 'none';
+}
+
+@media screen and (max-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    position: fixed;
+    background-color: #000000;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    top: 0;
+    right: 0;
+    width: 100vw;
+    padding-top: 3.5rem;
+    -webkit-transition: 'transform 0.3s ease-in-out';
+    -webkit-transition: 'transform 0.3s ease-in-out';
+    transition: 'transform 0.3s ease-in-out';
+  }
+}
+
+<ul
+  className="c0"
+/>
+`;
+
+exports[`RightNav.styles ContainerNav DEVE ser igual ao snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 5.563rem;
+  padding-right: 3.438rem;
+}
+
+<nav
+  className="c0"
+/>
+`;
+
+exports[`RightNav.styles Flag DEVE ser igual ao snapshot. 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width:768px) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0.313rem;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`RightNav.styles Item DEVE ser igual ao snapshot. 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.5rempx;
+  margin: 0.313rem 1.313rem;
+  color: #ffffff;
+}
+
+@media screen and (max-width:768px) {
+  .c0 {
+    padding: 0.5rempx 0;
+  }
+}
+
+<li
+  className="c0"
+/>
+`;
+
+exports[`RightNav.styles ItemNav DEVE ser igual ao snapshot QUANDO "isActive" for false. 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.5rempx;
+  margin: 0.313rem 1.313rem;
+  color: #ffffff;
+}
+
+@media screen and (max-width:768px) {
+  .c0 {
+    padding: 0.5rempx 0;
+  }
+}
+
+<li
+  className="c0"
+/>
+`;
+
+exports[`RightNav.styles ItemNav DEVE ser igual ao snapshot QUANDO "isActive" for true. 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.5rempx;
+  margin: 0.313rem 1.313rem;
+  color: #ffffff;
+}
+
+@media screen and (max-width:768px) {
+  .c0 {
+    padding: 0.5rempx 0;
+  }
+}
+
+<li
+  className="c0"
+/>
+`;
+
+exports[`RightNav.styles Menu DEVE ser igual ao snapshot  1`] = `
+.c0 {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    background-color: #00875F;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`RightNav.styles Texto DEVE ser igual ao snapshot 1`] = `
+.c0 {
+  color: #ffffff;
+}
+
+<div
+  className="c0"
+/>
+`;

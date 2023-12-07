@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Texto.styles > TextoH1 DEVE ser igual ao snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-family: AvertaStd-Regular;
+  color: #ffffff;
+  margin-top: 0px;
+  text-transform: none;
+  cursor: text;
+}
+
+<h1
+  className="c0"
+>
+  Teste
+</h1>
+`;

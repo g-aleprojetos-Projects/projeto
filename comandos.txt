@@ -1,0 +1,216 @@
+Criação do projeto portfolio-page em reactjs typescript com o vite
+o setup do projeto vai ter:
+
+eslint: que já vem com o projeto
+prettir: para ajudar na organização do projeto
+
+style-components: para trabalhar com a estilização
+testvite: para os testes
+jest: para fazer os teste da parte do estilo
+
+
+
+ 
+/** criação projeto **/
+npm create vite@latest
+
+/** Padronização do projeto **/
+editorConfig for VC Code
+eslint
+prettier
+
+
+video 1
+
+/** Cria projeto **/
+
+
+npm create vite@latest
+
+Project name:
+Select a framework: React
+Select a variant: TypeScript + SWC
+
+O que é SWC?
+SWC é um compilador super-rápido de JavaScript e TypeScript, projetado para substituir o Babel. Ele usa um analisador baseado em Rust e um compilador baseado em JavaScript para obter tempos de compilação mais rápidos que o Babel.
+O SWC é capaz de fornecer tempos de compilação mais rápidos, aproveitando a velocidade e os recursos multithreading do Rust, tornando-o particularmente útil para projetos de grande escala.
+O SWC oferece suporte a todos os recursos mais recentes de JavaScript e TypeScript e demonstrou ser significativamente mais rápido que o Babel em testes de benchmark.
+
+//entra na pasta
+cd nome do projeto
+
+** abri vs code
+code .
+//abre o terminal
+ctrl + '
+
+//importa pasta node_module
+npm i
+
+** começar o git
+git init
+
+
+//roda o projeto
+npm run dev
+
+
+/** projeto funcionando **/
+
+/** mostrar que o eslint já vem instalado no projeto**/
+
+/** cria o .eslintignore com o conteúdo**/
+node_modules
+dist
+build
+
+
+/** verificar se a extensão eslint esta instalado no vsCode **/
+ESLint
+
+/** instalação do prettier **/
+
+//instalar extensão do Prettier do vs code
+Prettier - Code formatter
+
+clicar com direito na raiz do projeto, e clicar generate .editorconfig
+
+indent_style = space
+indent_size = 2
+end_of_line = auto
+charset = utf-8
+printWidth = 80            
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+indent_style: defina como tabulação ou espaço para usar tabulações rígidas ou tabulações flexíveis, respectivamente.
+indent_size: um número inteiro definindo o número de colunas usadas para cada nível de recuo e a largura das tabulações programáveis ​​(quando suportadas). Quando definido como tab , o valor de tab_width(se especificado) será usado.
+tab_width: um número inteiro que define o número de colunas usadas para representar um caractere de tabulação. O padrão é o valor de indent_sizee geralmente não precisa ser especificado.
+end_of_line: defina como lf , cr ou crlf para controlar como as quebras de linha são representadas.
+charset: defina como latin1 , utf-8 , utf-8-bom , utf-16be ou utf-16le para controlar o conjunto de caracteres.
+trim_trailing_whitespace: defina como true para remover todos os caracteres de espaço em branco que precedem os caracteres de nova linha e false para garantir que isso não aconteça.
+insert_final_newline: defina como true para garantir que o arquivo termine com uma nova linha ao salvar e false para garantir que não.
+
+instalar pacote - npm install -D eslint-plugin-react
+
+criar chave settings depois de env no .eslintrc:
+  settings: {
+    react:{
+      version:"detect"
+    }
+  },
+
+instalar pacote - npm install -D eslint-plugin-react-hooks*já vem instalado
+no rules colocar essas regras: 
+"react/prop-types": "off",//usa com javascript, typagem
+"react-in-jsx-scope": "off",//
+"@typescript-eslint/explicit-module-boundary-types": "off",//retira tipagem de retorno
+
+//criar arquivo do prettier
+criar arquivo .prettier
+echo {}> .prettierrc.json
+valor dentro
+{
+  "bracketSpacing": false,
+  "jsxBracketSameLine": true,
+  "useTabs": false,
+  "semi": true,
+  "trailingComma": "all",
+  "singleQuote": true,//usa alpas simples
+  "arrowParens": "avoid",
+  "printWidth": 80 //80 colunas
+}
+
+criar aquivo .prettierignore com o conteudo
+node_modules
+dist
+build
+
+configurar integração com eslint
+
+instalar pacote: npm install -D eslint-plugin-prettier eslint-config-prettier
+
+instala plugin no extends do .eslintrc:
+
+    'plugin:prettier/recommended'
+
+e coloca no plugins o prettier
+
+cria pasta .vscode na raiz do projeto com arquivo settings.json com conteudo:
+
+{
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+
+
+testes
+instala o jest
+npm install -D jest 
+
+no package.json
+"script":{
+	   ...
+           "test": "jest",
+	   ...
+},
+
+
+
+
+
+npm install -D vitest
+
+
+
+{
+  "name": "portifolio-page",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.1.0",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "jest": "^29.6.2",
+    "jsdom": "^22.1.0",
+    "react-test-renderer": "^18.2.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vitest": "^0.34.6"
+  }
+}
+
+
+ npm install @testing-library/jest-dom @testing-library/react @testing-library/user-event -D
+
+ npm install @babel/core @babel/preset-env @babel/preset-react babel-jest identity-obj-proxy jest-environment-jsdom -D
+
+npm install --save-dev @babel/preset-typescript
+
+
+
+

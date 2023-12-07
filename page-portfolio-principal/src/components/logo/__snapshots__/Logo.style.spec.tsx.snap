@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo.styles Container DEVE ser igual ao snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 1.313rem;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Logo.styles Iconelogo DEVE ser igual ao snapshot 1`] = `null`;

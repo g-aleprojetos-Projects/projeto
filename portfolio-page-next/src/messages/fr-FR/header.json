@@ -1,0 +1,16 @@
+{
+  "Header":{
+    "language": "Langues",
+    "Languages":{
+      "english": "Anglais",
+      "french": "Français",
+      "portuguese": "Portugais"
+    }  
+  },
+  "Navbar": {
+    "home": "Accueil",
+    "skills": "Technologies",
+    "projects": "Projects",
+    "about": "À propos"
+  }
+}
